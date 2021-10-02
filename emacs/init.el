@@ -21,3 +21,14 @@
 
 ;; 輸入法
 (setq default-input-method 'rime)
+
+;; 邮箱
+(setq user-mail-address "luhux@foxmail.com"
+      user-full-name "Lu Hui")
+(setq gnus-select-method
+      '(nnimap "foxmail"
+	       (nnimap-address "imap.qq.com")
+	       (nnimap-server-port "imaps")
+	       (nnimap-stream ssl)))
+(setq smtpmail-smtp-server "smtp.qq.com"
+      smtpmail-smtp-service 587)
