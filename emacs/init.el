@@ -32,3 +32,9 @@
 	       (nnimap-stream ssl)))
 (setq smtpmail-smtp-server "smtp.qq.com"
       smtpmail-smtp-service 587)
+
+;; Telega
+(setq telega-proxies
+      (list
+       '(:server "127.0.0.1" :port 7891 :enable t
+		 :type (:@type "proxyTypeSocks5"))))

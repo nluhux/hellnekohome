@@ -31,6 +31,7 @@
 	    emacs-yasnippet ;; for guix devel
 	    emacs-magit ;; for guix devel
 	    emacs-company ;; for auto complete
+	    emacs-telega ;; Telegram Client
 	    openssh dropbear ;; for remote terminal
 	    freerdp tigervnc-client ;; for remote desktop
 	    emacs-w3m  w3m ungoogled-chromium/wayland ;; web browser
