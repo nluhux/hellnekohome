@@ -19,6 +19,7 @@
 	     (gnu packages xorg)
 	     (gnu packages tmux)
 	     (gnu packages screen)
+	     (gnu packages pdf)
              (guix gexp))
 
 (home-environment
@@ -37,6 +38,7 @@
 	    git ;; version control
 	    uim ;; input method
 	    tmux screen ;; terminal mu
+	    zathura zathura-pdf-mupdf ;; book reader
 	    ))
  (services
   (list 
