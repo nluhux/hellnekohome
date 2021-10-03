@@ -53,3 +53,8 @@
 ;; font
 (add-to-list 'default-frame-alist
 	     '(font . "Unifont-14"))
+
+;; IRC
+(setq erc-default-server "irc.libera.chat")
+(setq erc-default-port 6667)
+(setq erc-autojoin-channels-alist (("libera.chat" "#parrotsec-cn")))
