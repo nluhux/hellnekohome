@@ -5,6 +5,7 @@
              (gnu packages admin)
              (gnu packages base)
              (gnu packages certs)
+	     (gnu packages compression)
              (gnu packages curl)
              (gnu packages emacs)
 	     (gnu packages emacs-xyz)
@@ -47,6 +48,7 @@
 	    tmux screen ;; terminal mu
 	    zathura zathura-pdf-mupdf ;; book reader
 	    tree ;; :-)
+	    unzip ;; archive
 	    ))
  (services
   (list 
