@@ -3,6 +3,9 @@
              (gnu home-services shells)
              (gnu services)
              (gnu packages admin)
+             (gnu packages base)
+             (gnu packages certs)
+             (gnu packages curl)
              (gnu packages emacs)
 	     (gnu packages emacs-xyz)
 	     (gnu packages w3m)
@@ -24,6 +27,8 @@
 
 (home-environment
  (packages (list
+	    glibc-utf8-locales ;; locale
+	    nss-certs curl ;; ca-certs
 	    emacs-next-pgtk ;; code editor for lisp
 	    emacs-rime ;; fast chinese input
 	    emacs-paredit ;; for lisp
@@ -50,6 +55,8 @@
              (guix-defaults? #t)
              (bash-profile '("\
 export HISTSIZE=65535 # large history file (log)
+export GUIX_LOCPATH=${HOME}/.guix-home/profile/lib/locale
+export LANG=en_US.utf8
 set -o vi # vim operation (hand)
 "))))
    (simple-service 'dotfile
