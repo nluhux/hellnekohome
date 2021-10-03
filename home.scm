@@ -35,11 +35,12 @@
 	    openssh dropbear ;; for remote terminal
 	    freerdp tigervnc-client ;; for remote desktop
 	    emacs-w3m  w3m ungoogled-chromium/wayland ;; web browser
-	    hikari foot grim wl-clipboard ;; wayland
+	    foot grim wl-clipboard ;; wayland don't put hikari on here
 	    git ;; version control
 	    uim ;; input method
 	    tmux screen ;; terminal mu
 	    zathura zathura-pdf-mupdf ;; book reader
+	    tree ;; :-)
 	    ))
  (services
   (list 
