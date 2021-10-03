@@ -24,7 +24,7 @@
 
 (home-environment
  (packages (list
-	    emacs-no-x ;; code editor for lisp
+	    emacs-next-pgtk ;; code editor for lisp
 	    emacs-rime ;; fast chinese input
 	    emacs-paredit ;; for lisp
 	    emacs-geiser emacs-geiser-guile ;; for guile
@@ -32,6 +32,7 @@
 	    emacs-magit ;; for guix devel
 	    emacs-company ;; for auto complete
 	    emacs-telega ;; Telegram Client
+	    emacs-org-download ;; note insert picture
 	    openssh dropbear ;; for remote terminal
 	    freerdp tigervnc-client ;; for remote desktop
 	    emacs-w3m  w3m ungoogled-chromium/wayland ;; web browser

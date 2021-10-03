@@ -38,3 +38,18 @@
       (list
        '(:server "127.0.0.1" :port 7891 :enable t
 		 :type (:@type "proxyTypeSocks5"))))
+
+
+;; org-mode
+(require 'org-download)
+(add-hook 'dired-mode-hook 'org-download-enable)
+
+;; auto complete
+(global-company-mode)
+
+;; ido mode
+(ido-mode 1)
+
+;; font
+(add-to-list 'default-frame-alist
+	     '(font . "Unifont-14"))
