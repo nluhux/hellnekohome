@@ -25,7 +25,12 @@
 	     (gnu packages screen)
 	     (gnu packages pdf)
 	     (gnu packages task-management)
-             (guix gexp))
+	     (gnu packages virtualization)
+	     (gnu packages dictionaries)
+	     (gnu packages dico)
+	     (guix gexp)
+)
+
 
 (home-environment
  (packages (list
@@ -51,15 +56,19 @@
 	    tree ;; :-)
 	    unzip ;; archive
 	    blanket ;; niose player
+	    qemu ;; machine emu
+	    sdcv emacs-sdcv emacs-dictionary dico translate-shell ;; dictory
 	    ))
  (services
   (list 
    (service home-bash-service-type
             (home-bash-configuration
              (guix-defaults? #t)
-             (bash-profile '("\
+             (bash-profile '("
+# Guix home
 export HISTSIZE=65535 # large history file (log)
 export GUIX_LOCPATH=${HOME}/.guix-home/profile/lib/locale
+export EDITOR=emacsclient -nw
 export LANG=en_US.utf8
 set -o vi # vim operation (hand)
 "))))
@@ -81,4 +90,7 @@ set -o vi # vim operation (hand)
 			   ,(local-file (string-append (getenv "HOME") "/home.d/emacs/init.el")))
 			 `("gitconfig" ;; version control
 			   ,(local-file (string-append (getenv "HOME") "/home.d/git/gitconfig")))
+			 `("dico" ;; dict client
+			   ,(local-file (string-append (getenv "HOME") "/home.d/dico/dico"))
+			   )
 			 )))))
