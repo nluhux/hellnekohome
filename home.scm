@@ -49,6 +49,7 @@
 	    zathura zathura-pdf-mupdf ;; book reader
 	    tree ;; :-)
 	    unzip ;; archive
+	    blanket ;; study noise
 	    ))
  (services
   (list 
