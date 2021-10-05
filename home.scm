@@ -24,6 +24,7 @@
 	     (gnu packages tmux)
 	     (gnu packages screen)
 	     (gnu packages pdf)
+	     (gnu packages task-management)
              (guix gexp))
 
 (home-environment
@@ -49,7 +50,7 @@
 	    zathura zathura-pdf-mupdf ;; book reader
 	    tree ;; :-)
 	    unzip ;; archive
-	    blanket ;; study noise
+	    blanket ;; niose player
 	    ))
  (services
   (list 
