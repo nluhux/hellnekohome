@@ -93,3 +93,9 @@
 (setq dictionary-server "dict.tw")
 (global-set-key "\C-cs" 'dictionary-search)
 (global-set-key "\C-cy" 'sdcv-search-pointer)
+(eval-after-load 'google-translate-core
+  '(setq google-translate-base-url "http://translate.google.cn/translate_a/single"
+         google-translate-listen-url "http://translate.google.cn/translate_tts"))
+
+(eval-after-load 'google-translate-tk
+  '(setq google-translate--tkk-url "http://translate.google.cn/"))

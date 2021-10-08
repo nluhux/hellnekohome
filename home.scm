@@ -57,7 +57,7 @@
 	    unzip ;; archive
 	    blanket ;; niose player
 	    qemu ;; machine emu
-	    sdcv emacs-sdcv emacs-dictionary dico translate-shell ;; dictory
+	    sdcv emacs-sdcv emacs-dictionary dico translate-shell emacs-google-translate;; dictory
 	    ))
  (services
   (list 
@@ -68,7 +68,7 @@
 # Guix home
 export HISTSIZE=65535 # large history file (log)
 export GUIX_LOCPATH=${HOME}/.guix-home/profile/lib/locale
-export EDITOR=emacsclient -nw
+export EDITOR=emacsclient
 export LANG=en_US.utf8
 set -o vi # vim operation (hand)
 "))))
