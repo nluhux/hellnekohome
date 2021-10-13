@@ -28,6 +28,8 @@
 	     (gnu packages virtualization)
 	     (gnu packages dictionaries)
 	     (gnu packages dico)
+	     (gnu packages games)
+	     (gnu packages gimp)
 	     (guix gexp)
 )
 
@@ -56,8 +58,10 @@
 	    tree ;; :-)
 	    unzip ;; archive
 	    blanket ;; niose player
-	    qemu ;; machine emu
+	    qemu bochs ;; machine emu
 	    sdcv emacs-sdcv emacs-dictionary dico translate-shell emacs-google-translate;; dictory
+	    cataclysm-dda tintin++ curseofwar ;; game
+	    gimp ;; picture editor
 	    ))
  (services
   (list 
