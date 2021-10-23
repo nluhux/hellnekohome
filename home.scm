@@ -1,6 +1,6 @@
 (use-modules (gnu home)
-             (gnu home-services)
-             (gnu home-services shells)
+             (gnu home services)
+             (gnu home services shells)
              (gnu services)
              (gnu packages admin)
              (gnu packages base)
@@ -67,15 +67,7 @@
   (list 
    (service home-bash-service-type
             (home-bash-configuration
-             (guix-defaults? #t)
-             (bash-profile '("
-# Guix home
-export HISTSIZE=65535 # large history file (log)
-export GUIX_LOCPATH=${HOME}/.guix-home/profile/lib/locale
-export EDITOR=emacsclient
-export LANG=en_US.utf8
-set -o vi # vim operation (hand)
-"))))
+             (guix-defaults? #t)))
    (simple-service 'dotfile
 		   home-files-service-type
 		   (list `("config/hikari/hikari.conf" ;; Wayland WM
