@@ -30,6 +30,8 @@
 	     (gnu packages dico)
 	     (gnu packages games)
 	     (gnu packages gimp)
+	     (gnu packages man)
+	     (gnu packages texinfo)
 	     (guix gexp)
 )
 
@@ -62,6 +64,7 @@
 	    sdcv emacs-sdcv emacs-dictionary dico translate-shell emacs-google-translate;; dictory
 	    cataclysm-dda tintin++ curseofwar ;; game
 	    gimp ;; picture editor
+	    man-db texinfo ;; doc
 	    ))
  (services
   (list 
