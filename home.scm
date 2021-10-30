@@ -32,6 +32,7 @@
 	     (gnu packages gimp)
 	     (gnu packages man)
 	     (gnu packages texinfo)
+	     (gnu packages golang)
 	     (guix gexp)
 )
 
@@ -66,6 +67,7 @@
 	    gimp ;; picture editor
 	    man-db texinfo ;; doc
 	    asciinema ;; terminal recoder
+	    go emacs-go-mode ;; golang
 	    ))
  (services
   (list 
