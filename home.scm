@@ -65,6 +65,7 @@
 	    cataclysm-dda tintin++ curseofwar ;; game
 	    gimp ;; picture editor
 	    man-db texinfo ;; doc
+	    asciinema ;; terminal recoder
 	    ))
  (services
   (list 
