@@ -42,7 +42,7 @@
  (packages (list
 	    glibc-utf8-locales ;; locale
 	    nss-certs curl ;; ca-certs
-	    emacs-next-pgtk ;; code editor for lisp
+	    emacs-next ;; code editor for lisp
 	    emacs-rime ;; fast chinese input
 	    emacs-paredit ;; for lisp
 	    emacs-geiser emacs-geiser-guile ;; for guile
