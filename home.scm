@@ -73,7 +73,8 @@
   (list 
    (service home-bash-service-type
             (home-bash-configuration
-             (guix-defaults? #t)))
+             (guix-defaults? #t)
+	     (bash-profile '())))
    (simple-service 'dotfile
 		   home-files-service-type
 		   (list `("config/hikari/hikari.conf" ;; Wayland WM
