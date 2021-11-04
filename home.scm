@@ -33,6 +33,7 @@
 	     (gnu packages man)
 	     (gnu packages texinfo)
 	     (gnu packages golang)
+	     (gnu packages password-utils)
 	     (guix gexp)
 )
 
@@ -68,6 +69,7 @@
 	    man-db texinfo ;; doc
 	    asciinema ;; terminal recoder
 	    go emacs-go-mode ;; golang
+	    keepassxc ;; password manager
 	    ))
  (services
   (list 
