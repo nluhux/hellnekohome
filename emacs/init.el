@@ -68,10 +68,6 @@
 (setq inhibit-startup-message t)
 
 
-;; 主题设置
-(load-theme 'modus-operandi)
-
-
 ;; 字典
 (require 'dictionary)
 (autoload 'dictionary-search "dictionary"
