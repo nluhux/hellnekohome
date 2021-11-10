@@ -69,7 +69,7 @@
 
 
 ;; 主题设置
-(load-theme 'modus-vivendi)
+(load-theme 'modus-operandi)
 
 
 ;; 字典
