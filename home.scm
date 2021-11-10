@@ -34,6 +34,9 @@
 	     (gnu packages texinfo)
 	     (gnu packages golang)
 	     (gnu packages password-utils)
+	     (gnu packages radio)
+	     (gnu packages commencement)
+	     (gnu packages code)
 	     (guix gexp)
 )
 
@@ -66,10 +69,13 @@
 	    sdcv emacs-sdcv emacs-dictionary dico translate-shell emacs-google-translate;; dictory
 	    cataclysm-dda tintin++ curseofwar ;; game
 	    gimp ;; picture editor
-	    man-db texinfo ;; doc
+	    man-db man-pages texinfo ;; doc
 	    asciinema ;; terminal recoder
 	    go emacs-go-mode ;; golang
 	    keepassxc ;; password manager
+	    gqrx qsstv rtl-sdr ;; rtl sdr
+	    virt-manager ;; libvirt client
+	    gcc-toolchain global cscope universal-ctags gnu-make ;; C/C++
 	    ))
  (services
   (list 
