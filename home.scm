@@ -36,7 +36,10 @@
 	     (gnu packages password-utils)
 	     (gnu packages radio)
 	     (gnu packages commencement)
+	     (gnu packages gdb)
 	     (gnu packages code)
+	     (gnu packages pulseaudio)
+	     (gnu packages emulators)
 	     (guix gexp)
 )
 
@@ -55,7 +58,7 @@
 	    emacs-telega ;; Telegram Client
 	    emacs-org-download ;; note insert picture
 	    openssh dropbear ;; for remote terminal
-	    freerdp tigervnc-client ;; for remote desktop
+	    freerdp tigervnc-client remmina ;; for remote desktop
 	    emacs-w3m  w3m ungoogled-chromium/wayland ;; web browser
 	    foot grim wl-clipboard ;; wayland don't put hikari on here
 	    git ;; version control
@@ -75,7 +78,9 @@
 	    keepassxc ;; password manager
 	    gqrx qsstv rtl-sdr ;; rtl sdr
 	    virt-manager ;; libvirt client
-	    gcc-toolchain global cscope universal-ctags gnu-make ;; C/C++
+	    pulseaudio ;; audio
+	    gcc-toolchain global cscope universal-ctags gnu-make gdb ;; C/C++
+	    dosbox ;; 8086 emu
 	    ))
  (services
   (list 

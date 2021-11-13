@@ -54,12 +54,12 @@
 (add-to-list 'default-frame-alist
 	     '(font . "Unifont-14"))
 
+;; theme
+(load-theme 'modus-vivendi)
+
 ;; IRC
 (setq erc-default-server "irc.libera.chat")
 (setq erc-default-port 6667)
-
-;; 高亮当前行
-(global-hl-line-mode 1)
 
 
 ;; 图形设置
