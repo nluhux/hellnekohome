@@ -40,6 +40,7 @@
 	     (gnu packages code)
 	     (gnu packages pulseaudio)
 	     (gnu packages emulators)
+	     (gnu packages networking)
 	     (guix gexp)
 )
 
@@ -81,6 +82,7 @@
 	    pulseaudio ;; audio
 	    gcc-toolchain global cscope universal-ctags gnu-make gdb ;; C/C++
 	    dosbox ;; 8086 emu
+	    proxychains-ng ;; proxy
 	    ))
  (services
   (list 
