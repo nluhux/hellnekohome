@@ -78,6 +78,7 @@
 	    go emacs-go-mode ;; golang
 	    keepassxc ;; password manager
 	    gqrx qsstv rtl-sdr ;; rtl sdr
+	    picocom ;; serial port
 	    virt-manager ;; libvirt client
 	    pulseaudio ;; audio
 	    gcc-toolchain global cscope universal-ctags gnu-make gdb ;; C/C++
